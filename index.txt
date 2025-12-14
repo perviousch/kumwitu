@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kumwitu Uku Mwitu | Mbala’s Future Starts With Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-green-900 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Kumwitu Uku Mwitu</h1>
+    <nav class="space-x-6 text-sm">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="focus-areas.html">Focus Areas</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="remmy-sikazwe.html">Tournament</a>
+      <a href="updates.html">Updates</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-green-800 text-white py-24">
+  <div class="max-w-4xl mx-auto text-center px-6">
+    <h2 class="text-4xl font-bold mb-4">
+      Mbala’s Future Starts With Us
+    </h2>
+    <p class="text-lg mb-8">
+      Kumwitu Uku Mwitu is a people-led movement rooted in our heritage,
+      empowering youth and communities to build opportunity, unity,
+      and shared prosperity.
+    </p>
+    <a href="get-involved.html" class="bg-white text-green-800 px-6 py-3 rounded font-semibold">
+      Join the Movement
+    </a>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h3 class="text-2xl font-bold mb-4">Why Kumwitu Uku Mwitu?</h3>
+      <p>
+        Mbala is rich in culture, land, and talent. Yet many young people face
+        limited access to opportunities, skills, and resources.
+        Kumwitu Uku Mwitu exists to bridge that gap by connecting youth to
+        practical pathways for growth and dignity.
+      </p>
+    </div>
+    <div class="bg-gray-200 h-64 flex items-center justify-center">
+      <span>Image: youth-community.jpg</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOCUS AREAS -->
+<section class="bg-gray-50 py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-2xl font-bold text-center mb-10">Our Focus Areas</h3>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 shadow">
+        <h4 class="font-semibold mb-2">Jobs & Skills</h4>
+        <p class="text-sm">Connecting youth to opportunities and employable skills.</p>
+      </div>
+
+      <div class="bg-white p-6 shadow">
+        <h4 class="font-semibold mb-2">Learning</h4>
+        <p class="text-sm">Knowledge, mentorship, and lifelong growth.</p>
+      </div>
+
+      <div class="bg-white p-6 shadow">
+        <h4 class="font-semibold mb-2">Community Savings</h4>
+        <p class="text-sm">Building financial discipline through unity.</p>
+      </div>
+
+      <div class="bg-white p-6 shadow">
+        <h4 class="font-semibold mb-2">Youth Mobility</h4>
+        <p class="text-sm">Ensuring access to opportunity through movement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPORTS -->
+<section class="py-16">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h3 class="text-2xl font-bold mb-4">Sports for Community Development</h3>
+    <p class="mb-6">
+      The Remmy Sikazwe Football Tournament promotes unity, discipline,
+      and youth engagement through sport.
+    </p>
+    <a href="remmy-sikazwe.html" class="text-green-800 font-semibold">
+      Learn More →
+    </a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-green-900 text-white py-16 text-center">
+  <h3 class="text-2xl font-bold mb-4">Be Part of the Change</h3>
+  <a href="get-involved.html" class="bg-white text-green-900 px-6 py-3 rounded font-semibold">
+    Get Involved
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+  © 2025 Kumwitu Uku Mwitu | www.kumwitu.com
+</footer>
+
+</body>
+</html>

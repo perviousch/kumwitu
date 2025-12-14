@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Focus Areas | Kumwitu Uku Mwitu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our four focus areas: Jobs & Skills, Learning & Mentorship, Community Savings, and Youth Mobility." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .nav-link {
+      transition: opacity 0.2s;
+    }
+    .nav-link:hover {
+      opacity: 0.8;
+    }
+    .focus-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .focus-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    @media (max-width: 768px) {
+      .mobile-menu {
+        display: none;
+      }
+      .mobile-menu.active {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-md border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col items-center py-4">
+      <a href="index.html" class="text-2xl sm:text-3xl font-bold text-green-800 hover:text-green-900 transition mb-4 md:mb-0">
+        Kumwitu Uku Mwitu
+      </a>
+      <nav class="hidden md:flex space-x-8 text-sm lg:text-base">
+        <a href="index.html" class="nav-link text-gray-700 hover:text-green-800">Home</a>
+        <a href="about.html" class="nav-link text-gray-700 hover:text-green-800">About</a>
+        <a href="focus-areas.html" class="nav-link text-gray-700 hover:text-green-800 font-medium border-b-2 border-green-800 pb-1">Focus Areas</a>
+        <a href="get-involved.html" class="nav-link text-gray-700 hover:text-green-800">Get Involved</a>
+        <a href="job-skills.html" class="nav-link text-gray-700 hover:text-green-800">Career</a>
+        <a href="remmy-sikazwe.html" class="nav-link text-gray-700 hover:text-green-800">Tournament</a>
+      </nav>
+      <button id="mobile-menu-btn" class="md:hidden absolute top-4 right-4 text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="mobile-menu md:hidden pb-4">
+      <div class="flex flex-col space-y-3 text-center">
+        <a href="index.html" class="nav-link text-gray-700 hover:text-green-800">Home</a>
+        <a href="about.html" class="nav-link text-gray-700 hover:text-green-800">About</a>
+        <a href="focus-areas.html" class="nav-link text-gray-700 hover:text-green-800 font-medium border-b border-gray-300 pb-2">Focus Areas</a>
+        <a href="get-involved.html" class="nav-link text-gray-700 hover:text-green-800">Get Involved</a>
+        <a href="job-skills.html" class="nav-link text-gray-700 hover:text-green-800">Career</a>
+        <a href="remmy-sikazwe.html" class="nav-link text-gray-700 hover:text-green-800">Tournament</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('active');
+  });
+</script>
+
+<!-- Page Header -->
+<section class="bg-gradient-to-r from-green-800 to-green-700 text-white py-12 sm:py-16 mt-20 relative bg-cover bg-center" style="background-image: url('images/community.jpeg');">
+  <div class="absolute inset-0 bg-green-900 bg-opacity-70"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+    <h1 class="text-4xl sm:text-5xl font-bold mb-4">Our Focus Areas</h1>
+    <p class="text-lg sm:text-xl text-green-100">Four pillars of empowerment driving youth development</p>
+  </div>
+</section>
+
+<!-- Focus Areas Grid -->
+<section class="py-16 sm:py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 gap-8 lg:gap-10">
+      <a href="job-skills.html" class="focus-card bg-white p-8 rounded-xl shadow-lg">
+        <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-4 text-gray-900">Jobs & Skills</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Connecting youth to employment opportunities and practical skills that improve employability, 
+          dignity, and long-term growth. We bridge the gap between talent and opportunity.
+        </p>
+        <span class="text-green-800 font-semibold inline-flex items-center">
+          Learn More →
+        </span>
+      </a>
+
+      <a href="learning.html" class="focus-card bg-white p-8 rounded-xl shadow-lg">
+        <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-4 text-gray-900">Learning & Mentorship</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Access to knowledge, mentorship, and self-improvement through structured programs. 
+          Empowering youth with the tools for lifelong learning and personal development.
+        </p>
+        <span class="text-blue-800 font-semibold inline-flex items-center">
+          Learn More →
+        </span>
+      </a>
+
+      <a href="community-savings.html" class="focus-card bg-white p-8 rounded-xl shadow-lg">
+        <div class="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-4 text-gray-900">Community Savings</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Strengthening financial discipline through collective effort. Building savings habits 
+          that create security and enable future investments in education and entrepreneurship.
+        </p>
+        <span class="text-yellow-800 font-semibold inline-flex items-center">
+          Learn More →
+        </span>
+      </a>
+
+      <a href="youth-mobility.html" class="focus-card bg-white p-8 rounded-xl shadow-lg">
+        <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-purple-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-4 text-gray-900">Youth Mobility</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Ensuring transport does not limit opportunity. Facilitating access to education, 
+          employment, and services through transportation support and infrastructure advocacy.
+        </p>
+        <span class="text-purple-800 font-semibold inline-flex items-center">
+          Learn More →
+        </span>
+      </a>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="get-involved.html" class="inline-block bg-green-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-900 transition shadow-md hover:shadow-lg transform hover:-translate-y-1">
+        Get Involved
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div class="col-span-1 md:col-span-2">
+        <h3 class="text-xl font-bold text-white mb-4">Kumwitu Uku Mwitu</h3>
+        <p class="text-sm mb-4 leading-relaxed">
+          A community-led youth empowerment movement in Mbala, Zambia. 
+          Empowering youth through opportunity, unity, and shared prosperity.
+        </p>
+        <p class="text-xs text-gray-500">© 2025 Kumwitu Uku Mwitu. All rights reserved.</p>
+      </div>
+      
+      <div>
+        <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-white transition">About</a></li>
+          <li><a href="focus-areas.html" class="hover:text-white transition">Focus Areas</a></li>
+          <li><a href="get-involved.html" class="hover:text-white transition">Get Involved</a></li>
+          <li><a href="remmy-sikazwe.html" class="hover:text-white transition">Tournament</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="font-semibold text-white mb-4">Connect</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="job-skills.html" class="hover:text-white transition">Jobs & Skills</a></li>
+          <li><a href="learning.html" class="hover:text-white transition">Learning</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
+      <p>www.kumwitu.com | Mbala, Zambia</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
